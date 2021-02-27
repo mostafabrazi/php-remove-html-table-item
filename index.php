@@ -11,8 +11,10 @@
     $data = array_values($data);
     $i=0;
     foreach($data as $element) {
+      
       //check if it's the right item
-      if(intval($_POST['item_key']) == $element['id']){ // intval only if you are sure id passed in POST[item_key] always integer 
+      if(intval($_POST['item_key']) == $element['id']){ 
+        // intval only if you are sure id passed in POST[item_key] always integer 
          unset($data[$i]);
       }
       $i++;
